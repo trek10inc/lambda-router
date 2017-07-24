@@ -1,0 +1,34 @@
+{
+  "name": "lambda-router",
+  "version": "0.0.2",
+  "description": "Class to route apigateway requests inside lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc tape test.js | tap-diff"
+  },
+  "author": "Joel Haubold",
+  "keywords": [
+    "lambda",
+    "apigateway",
+    "route",
+    "router",
+    "routing",
+    "path-to-regexp",
+    "promise"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trek10inc/lambda-router"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "path-to-regexp": "^1.7.0"
+  },
+  "devDependencies": {
+    "nyc": "^11.0.3",
+    "sinon": "^2.3.8",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.7.0"
+  }
+}
