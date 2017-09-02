@@ -1,5 +1,7 @@
 # Lightweight promise based router for AWS Lambda invoked by AWS Apigateway lambda proxy integration
 
+## Inspiration
+
 ## Usage
 Define your common middleware, routes, and default route.
 ```
@@ -36,7 +38,7 @@ module.exports.handler = function (event, context, callback) {
 ```
 
 ## Middleware
-Middleware is a function that take the lambda event as a parameter, performs some work, including modifying the event and returns the event (or another object).
+Middleware is a function that takes the lambda event as a parameter, performs some work, including modifying the event and returns the event (or another object).
 The result is passed to the next middleware function. Middleware can return a promise of the event object or the event object.
 
 Middleware errors/rejections are not handled.

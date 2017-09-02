@@ -1,5 +1,5 @@
 {
-  "name": "lambda-router",
+  "name": "aws-simple-lambda-router",
   "version": "0.0.2",
   "description": "Class to route apigateway requests inside lambda",
   "main": "index.js",
