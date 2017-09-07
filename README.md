@@ -14,9 +14,9 @@ let router = new Router({
   	middleware2
   ],
   routes: [
-  	'GET', '/widgets', routes.getWidgets,
-  	'GET', '/widgets/:widgetId', [ authorizer.widget.get, routes.getWidget ]
-  	'PUT', '/widgets/:widgetId', [ authorizer.widget.put, routes.putWidget ]
+  	[ 'GET', '/widgets', routes.getWidgets ],
+  	[ 'GET', '/widgets/:widgetId', [ authorizer.widget.get, routes.getWidget ] ],
+  	[ 'PUT', '/widgets/:widgetId', [ authorizer.widget.put, routes.putWidget ] ]
   ],
   defaultRoute: routes.defaultRoute
 });
